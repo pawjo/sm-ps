@@ -1,2 +1,2 @@
-# sm-ps
-Systemy Mobilne
+# Systemy Mobilne
+Przedmiot realizowany na V semestrze Informatyki na PB
