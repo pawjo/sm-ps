@@ -1,0 +1,52 @@
+Próba nr 1
+-----------------------------------------
+
+Po pierwszym uruchomieniu aplikacji:
+2021-10-27 21:15:20.722 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onCreate
+2021-10-27 21:15:20.835 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 21:15:20.837 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onResume
+
+Po wciśnięciu przycisku Cofnij:
+2021-10-27 21:15:54.466 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onPause
+2021-10-27 21:15:55.301 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStop
+2021-10-27 21:15:55.303 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onDestroy
+
+Po ponownym uruchomieniu aplikacji:
+2021-10-27 21:16:43.026 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onCreate
+2021-10-27 21:16:43.055 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 21:16:43.056 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onResume
+
+Po wciśnięciu przycisku ekranu głównego Home:
+2021-10-27 21:18:15.297 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onPause
+2021-10-27 21:18:16.079 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStop
+
+Po powrocie do aplikacji z listy ostatnio używanych aplikacji:
+2021-10-27 21:18:38.782 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 21:18:38.783 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onResume
+
+Po zmianie orientacji urządzenia:
+2021-10-27 21:19:49.037 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onPause
+2021-10-27 21:19:49.039 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStop
+2021-10-27 21:19:49.040 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onDestroy
+2021-10-27 21:19:49.063 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onCreate
+2021-10-27 21:19:49.089 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 21:19:49.090 11723-11723/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onResume
+
+
+
+Próba nr 2 - po dodaniu zapisywania stanu
+-----------------------------------------
+
+Po uruchomieniu aplikacji:
+2021-10-27 22:24:22.369 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onCreate
+2021-10-27 22:24:22.461 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 22:24:22.463 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onResume
+
+Po zmianie orientacji urządzenia:
+2021-10-27 22:24:39.072 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onPause
+2021-10-27 22:24:39.074 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStop
+2021-10-27 22:24:39.075 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda: onSaveInstanceState
+2021-10-27 22:24:39.075 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onDestroy
+2021-10-27 22:24:39.103 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onCreate
+2021-10-27 22:24:39.130 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onStart
+2021-10-27 22:24:39.131 13262-13262/quiz.qui.quizpw D/MainActivity: Wywołana została metoda cyklu życia: onResume
