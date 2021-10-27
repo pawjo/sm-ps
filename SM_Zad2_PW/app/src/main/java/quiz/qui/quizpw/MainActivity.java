@@ -2,6 +2,7 @@ package quiz.qui.quizpw;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,9 +15,12 @@ public class MainActivity extends AppCompatActivity {
     private static final String QUIZ_TAG = "MainActivity";
     private static final String KEY_CURRENT_INDEX = "currentIndex";
 
+    public static final String KEY_EXTRA_ANSWER = "quiz.correctAnswer";
+
     private Button trueButton;
     private Button falseButton;
     private Button nextButton;
+    private Button hintButton;
     private TextView questionTextView;
 
     private Question[] questions = new Question[]{
@@ -44,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         trueButton = findViewById(R.id.true_button);
         falseButton = findViewById(R.id.false_button);
         nextButton = findViewById(R.id.next_button);
+        hintButton = findViewById(R.id.hint_button);
         questionTextView = findViewById(R.id.question_text_view);
-
 
         trueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +70,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 currentIndex = (currentIndex + 1) % questions.length;
                 setNextQuestion();
+            }
+        });
+
+        hintButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PromptActivity.class);
+                boolean correctAnswer = questions[currentIndex].isTrueAnswer();
+                intent.putExtra(KEY_EXTRA_ANSWER, correctAnswer);
+                startActivity(intent);
             }
         });
 

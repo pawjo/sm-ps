@@ -3,6 +3,7 @@
     <string name="button_true">Prawda</string>
     <string name="button_false">Fałsz</string>
     <string name="button_next">Następne</string>
+    <string name="button_hint">Podpowiedź</string>
 
     <string name="q_p1">Pytanie 1</string>
     <string name="q_p2">Pytanie 2</string>
@@ -12,4 +13,7 @@
 
     <string name="correct_answer">Poprawna odpowiedź.</string>
     <string name="incorrect_answer">Niepoprawna odpowiedź.</string>
+
+    <string name="confirmation_text">Czy na pewno chcesz zobaczyć odpowiedź?</string>
+    <string name="button_confirm">Pokaż odpowiedź</string>
 </resources>
