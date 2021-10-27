@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">QuizPW</string>
+    <string name="button_true">Prawda</string>
+    <string name="button_false">Fałsz</string>
+    <string name="button_next">Następne</string>
+
+    <string name="q_p1">Pytanie 1</string>
+    <string name="q_p2">Pytanie 2</string>
+    <string name="q_p3">Pytanie 3</string>
+    <string name="q_p4">Pytanie 4</string>
+    <string name="q_p5">Pytanie 5</string>
+
+    <string name="correct_answer">Poprawna odpowiedź.</string>
+    <string name="incorrect_answer">Niepoprawna odpowiedź.</string>
+</resources>
