@@ -13,7 +13,9 @@
 
     <string name="correct_answer">Poprawna odpowiedź.</string>
     <string name="incorrect_answer">Niepoprawna odpowiedź.</string>
+    <string name="answer_was_shown">Oszukujesz! Odpowiedź była już wyświetlona.</string>
 
     <string name="confirmation_text">Czy na pewno chcesz zobaczyć odpowiedź?</string>
     <string name="button_confirm">Pokaż odpowiedź</string>
+    <string name="button_return">Powrót</string>
 </resources>
