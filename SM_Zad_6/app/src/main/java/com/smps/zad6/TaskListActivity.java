@@ -1,14 +1,14 @@
 package com.smps.zad6;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 
-public class TaskListActivity extends AppCompatActivity {
+public class TaskListActivity extends SingleFragmentActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected Fragment createFragment() {
+        return new TaskFragment();
     }
 }
