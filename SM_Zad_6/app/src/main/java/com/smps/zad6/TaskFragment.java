@@ -13,8 +13,11 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.util.UUID;
+
 public class TaskFragment extends Fragment {
 
+    private static final String ARG_TASK_ID = "argTaskId";
     private EditText nameField;
     private Button dateButton;
     private CheckBox doneCheckBox;
@@ -25,8 +28,9 @@ public class TaskFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+//        UUID taskId = (UUID) getArguments().getSerializable(ARG_TASK_ID);
+//        task = TaskStorage.getInstance().getById(taskId);
         task = new Task();
-
     }
 
     @Nullable
@@ -62,5 +66,13 @@ public class TaskFragment extends Fragment {
         });
 
         return view;
+    }
+
+    public static TaskFragment newInstance(UUID taskId) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(ARG_TASK_ID, taskId);
+        TaskFragment taskFragment = new TaskFragment();
+        taskFragment.setArguments(bundle);
+        return taskFragment;
     }
 }

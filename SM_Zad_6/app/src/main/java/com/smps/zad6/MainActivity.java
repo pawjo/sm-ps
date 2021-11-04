@@ -2,6 +2,8 @@ package com.smps.zad6;
 
 import androidx.fragment.app.Fragment;
 
+import java.util.UUID;
+
 public class MainActivity extends SingleFragmentActivity {
 
     private int arraySize = 10;
@@ -10,6 +12,7 @@ public class MainActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
-        return new TaskFragment();
+        UUID taskId = (UUID) getIntent().getSerializableExtra(TaskListFragment.KEY_EXTRA_TASK_ID);
+        return TaskFragment.newInstance(taskId);
     }
 }
